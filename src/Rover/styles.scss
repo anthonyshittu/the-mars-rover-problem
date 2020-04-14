@@ -1,0 +1,57 @@
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  &__box {
+    margin: 1px;
+    width: 80px;
+    background: tomato;
+    height: 50px;
+    color: white;
+    display: grid;
+    span:nth-of-type(2) {
+      text-align: center;
+    }
+  }
+  &__col {
+    display: flex;
+    flex-wrap: wrap;
+    width: 81px;
+    flex-direction: column-reverse;
+    .current {
+      background: green;
+    }
+    .prev {
+      background: darkgreen;
+    }
+    .invalid {
+      background: red;
+    }
+  }
+  i {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 6px;
+  }
+  &__E {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+  
+  &__W {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+  }
+  
+  &__N {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+  }
+  
+  &__S {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+}
+
+
